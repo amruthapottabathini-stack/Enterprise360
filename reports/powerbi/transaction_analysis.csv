@@ -1,0 +1,19 @@
+transaction_id,transaction_date,department_name,vendor_name,vendor_category,amount,status,description
+1,2026-01-05,Finance,Vendor A,Technology,12000.0,Completed,Software subscription
+2,2026-01-12,Procurement,Vendor B,Equipment,8500.0,Completed,Equipment purchase
+3,2026-01-19,Operations,Vendor C,Services,14200.0,Pending,Field operations support
+4,2026-02-05,Finance,Vendor A,Technology,15000.0,Completed,Annual software renewal
+5,2026-02-14,Procurement,Vendor D,Logistics,9200.0,Pending,Logistics services
+6,2026-02-21,Operations,Vendor C,Services,18000.0,Completed,Infrastructure maintenance
+7,2026-03-03,Finance,Vendor E,Consulting,13500.0,Completed,Consulting services
+8,2026-03-11,Procurement,Vendor B,Equipment,11000.0,Completed,Office equipment
+9,2026-03-23,Operations,Vendor D,Logistics,16000.0,Pending,Network deployment
+10,2026-04-04,Finance,Vendor A,Technology,19000.0,Completed,Technology services
+11,2026-04-13,Procurement,Vendor E,Consulting,14500.0,Completed,Vendor consultation
+12,2026-04-25,Operations,Vendor C,Services,21000.0,Pending,Project support
+13,2026-05-06,Finance,Vendor E,Consulting,15500.0,Completed,Audit services
+14,2026-05-15,Procurement,Vendor B,Equipment,17500.0,Completed,Equipment upgrade
+15,2026-05-26,Operations,Vendor D,Logistics,22000.0,Pending,Operations support
+16,2026-06-05,Finance,Vendor A,Technology,20000.0,Completed,Software services
+17,2026-06-16,Procurement,Vendor B,Equipment,18500.0,Pending,Infrastructure equipment
+18,2026-06-27,Operations,Vendor C,Services,25000.0,Completed,Field project services

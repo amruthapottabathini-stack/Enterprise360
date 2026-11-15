@@ -1,0 +1,6 @@
+project_id,project_name,department_id,start_date,deadline,completion_percentage,status
+1,Project Alpha,1,2026-01-01,2026-12-30,85.0,In Progress
+2,Project Beta,3,2026-02-01,2026-10-30,65.0,Delayed
+3,Project Gamma,2,2026-03-01,2026-11-30,92.0,In Progress
+4,Project Delta,3,2026-04-01,2026-12-15,45.0,In Progress
+5,Project Epsilon,1,2026-05-01,2026-12-20,78.0,In Progress

@@ -1,0 +1,6 @@
+risk_id,transaction_id,risk_type,severity,description,status,created_at
+1,,Duplicate transaction,High,Potential duplicate payment identified.,Open,2026-11-07 07:34:04
+2,,Vendor documentation,Medium,Additional vendor documents required.,Open,2026-11-07 07:34:04
+3,,Operational delay,High,Approval pending beyond expected timeline.,Open,2026-11-07 07:34:04
+4,,Budget variance,Low,Department budget requires monitoring.,Open,2026-11-07 07:34:04
+5,,Data quality,Medium,Supporting documents are incomplete.,Open,2026-11-07 07:34:04

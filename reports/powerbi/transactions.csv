@@ -1,0 +1,19 @@
+transaction_id,department_id,vendor_id,transaction_date,amount,status,description
+1,1,1,2026-01-05,12000.0,Completed,Software subscription
+2,2,2,2026-01-12,8500.0,Completed,Equipment purchase
+3,3,3,2026-01-19,14200.0,Pending,Field operations support
+4,1,1,2026-02-05,15000.0,Completed,Annual software renewal
+5,2,4,2026-02-14,9200.0,Pending,Logistics services
+6,3,3,2026-02-21,18000.0,Completed,Infrastructure maintenance
+7,1,5,2026-03-03,13500.0,Completed,Consulting services
+8,2,2,2026-03-11,11000.0,Completed,Office equipment
+9,3,4,2026-03-23,16000.0,Pending,Network deployment
+10,1,1,2026-04-04,19000.0,Completed,Technology services
+11,2,5,2026-04-13,14500.0,Completed,Vendor consultation
+12,3,3,2026-04-25,21000.0,Pending,Project support
+13,1,5,2026-05-06,15500.0,Completed,Audit services
+14,2,2,2026-05-15,17500.0,Completed,Equipment upgrade
+15,3,4,2026-05-26,22000.0,Pending,Operations support
+16,1,1,2026-06-05,20000.0,Completed,Software services
+17,2,2,2026-06-16,18500.0,Pending,Infrastructure equipment
+18,3,3,2026-06-27,25000.0,Completed,Field project services

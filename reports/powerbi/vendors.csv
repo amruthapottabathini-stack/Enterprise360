@@ -1,0 +1,6 @@
+vendor_id,vendor_name,category,rating,status
+1,Vendor A,Technology,4.5,Active
+2,Vendor B,Equipment,4.0,Active
+3,Vendor C,Services,3.8,Active
+4,Vendor D,Logistics,4.7,Active
+5,Vendor E,Consulting,3.5,Active
