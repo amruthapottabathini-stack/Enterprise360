@@ -1,38 +1,48 @@
 # Enterprise360 – Business Intelligence & Risk Monitoring
 
-Enterprise360 is a portfolio project that combines a Streamlit business intelligence dashboard with a Power BI executive report. It demonstrates how transaction, vendor, project, and risk data can be organized, analyzed, and presented to support business operations, performance monitoring, and risk management.
+Enterprise360 is a Business Intelligence and Risk Monitoring platform developed using Python, Streamlit, SQL, Power BI and Google Gemini AI.
 
-> **Project Data Note:** The current dashboard uses synthetic demonstration data. Figures shown in the application and screenshots are illustrative and do not represent actual company performance.
+The project demonstrates how business transaction, vendor, project and risk data can be collected, analyzed, validated and transformed into meaningful insights to support enterprise operations, performance monitoring and risk management.
+
+**Project Data Note:** This project uses synthetic demonstration data. All figures, transactions, vendors, risks and project metrics displayed in the application are illustrative and do not represent actual company performance.
+
+---
 
 ## Project Highlights
 
-- **Executive Overview:** Displays business performance KPIs, transaction volume, transaction value, high-risk records, and data quality indicators.
-- **Risk & Controls:** Monitors risk records, risk severity, risk types, and outstanding risk reviews.
-- **Data Quality Management:** Identifies missing vendor information, missing descriptions, and duplicate transaction records.
-- **Vendor Performance:** Analyzes vendor spending, transaction activity, completed transactions, and pending transactions.
-- **Operations Management:** Tracks project progress, completion percentages, and delayed projects.
-- **AI Business Insights:** Combines Python-based analytical rules with Google Gemini API to generate business summaries, key observations, and management recommendations.
+- **Executive Overview:** Displays key business performance indicators, transaction volume, transaction value, high-risk records and data quality metrics.
+- **Risk & Controls:** Monitors risk records, severity levels, risk categories and outstanding risk reviews.
+- **Data Quality Management:** Identifies missing vendor information, missing descriptions and duplicate transaction records.
+- **Vendor Performance:** Analyzes vendor spending, transaction activity, completed transactions and pending transactions.
+- **Operations Management:** Tracks project progress, completion percentages and delayed projects.
+- **AI Business Insights:** Combines Python-based analytical rules with Google Gemini AI to generate business summaries, observations and management recommendations.
 - **Power BI Reporting:** Provides CSV exports and an interactive executive reporting dashboard.
+
+---
 
 ## Technology Stack
 
 | Technology | Purpose |
 |---|---|
 | Python | Application development and business logic |
-| Streamlit | Interactive dashboard |
+| Streamlit | Interactive dashboard development |
 | SQLite | Database management |
 | SQL | Data querying and analysis |
 | Pandas | Data processing and transformation |
 | Plotly | Interactive charts and visualizations |
 | Power BI Desktop | Executive reporting and analytics |
 | Google Gemini API | AI-powered business insights |
-| Google Gen AI SDK | Gemini API integration |
+| Google Gen AI SDK | Generative AI integration |
+| Git & GitHub | Version control and project hosting |
+
+---
 
 ## Dashboard Modules
 
 ### 1. Executive Overview
+
 - Total transactions processed
-- Transaction value
+- Total transaction value
 - High-risk records
 - Data quality score
 - Monthly transaction trends
@@ -40,6 +50,7 @@ Enterprise360 is a portfolio project that combines a Streamlit business intellig
 - Recent transaction records
 
 ### 2. Risk & Controls
+
 - Total risk records
 - High-risk records
 - Open risk records
@@ -47,13 +58,15 @@ Enterprise360 is a portfolio project that combines a Streamlit business intellig
 - Risk register and status monitoring
 
 ### 3. Data Quality Management
-- Transactions checked
+
+- Total transactions checked
 - Missing vendor information
-- Missing descriptions
+- Missing transaction descriptions
 - Duplicate transaction detection
 - Data validation report
 
 ### 4. Vendor Performance
+
 - Total vendors
 - Total vendor spending
 - Completed and pending transactions
@@ -62,6 +75,7 @@ Enterprise360 is a portfolio project that combines a Streamlit business intellig
 - Vendor register
 
 ### 5. Operations Management
+
 - Total projects
 - Average project completion
 - Delayed projects
@@ -69,33 +83,42 @@ Enterprise360 is a portfolio project that combines a Streamlit business intellig
 - Project register and delivery status
 
 ### 6. AI Business Insights
+
 - Python-based analytical observations
 - Gemini-powered executive summaries
 - Key business performance observations
-- Priority management actions
+- Priority management recommendations
 - Data limitations and evidence-based recommendations
+
+---
 
 ## AI Integration
 
 Enterprise360 integrates the Google Gemini API to generate business insights from aggregate demonstration metrics.
 
-The AI analysis provides:
+The AI integration supports:
+
 - Executive summaries
 - Key business observations
 - Priority management recommendations
-- Data limitations
+- Identification of business performance patterns
+- Data limitations and recommendations
 
 The application is designed to send aggregate metrics rather than confidential row-level business records.
 
-**Note:** AI-generated results depend on API availability, model capacity, and applicable usage limits. The application also includes Python-based analytical rules.
+**Note:** AI-generated results depend on API availability, model capacity and applicable usage limits. Python-based analytical rules are also included in the application.
+
+---
 
 ## Database and Data Reporting
 
 The project uses a local SQLite database to store and retrieve demonstration data.
 
+Python and SQL are used for database operations, data processing and analytical queries.
+
 CSV exports are generated for Power BI reporting.
 
-The export files include:
+The exported datasets include:
 
 - `departments.csv`
 - `vendors.csv`
@@ -104,9 +127,11 @@ The export files include:
 - `risk_records.csv`
 - `transaction_analysis.csv`
 
+---
+
 ## Power BI Executive Dashboard
 
-The Power BI report demonstrates business reporting through:
+The Power BI report demonstrates business intelligence and executive reporting through:
 
 - KPI cards
 - Monthly transaction trends
@@ -116,7 +141,9 @@ The Power BI report demonstrates business reporting through:
 - Date slicer
 - Vendor-category slicer
 
-The report uses CSV files exported from the Enterprise360 database.
+The dashboard uses CSV datasets exported from the Enterprise360 database.
+
+---
 
 ## Project Structure
 
@@ -125,15 +152,20 @@ Enterprise360/
 │
 ├── app.py
 ├── ai_insights.py
-├── secrets.toml
+├── .gitignore
+│
+├── .streamlit/
+│   └── config.toml
 │
 ├── database/
 │   ├── schema.sql
 │   ├── db.py
+│   ├── check_db.py
 │   ├── seed.py
 │   ├── queries.py
 │   ├── export_data.py
-│   └── enterprise360.db
+│   ├── enterprise360.db
+│   └── Enterprise360_Executive_Dashboard.pbix
 │
 ├── reports/
 │   └── powerbi/
@@ -142,14 +174,15 @@ Enterprise360/
 │       ├── transactions.csv
 │       ├── projects.csv
 │       ├── risk_records.csv
-│       ├── transaction_analysis.csv
-│       └── Enterprise360_Executive_Dashboard.pbix
+│       └── transaction_analysis.csv
 │
 ├── README.md
 └── requirements.txt
 ```
 
-*This is a representative project structure. Adjust it to match the files actually included in your repository.*
+**Note:** `.streamlit/secrets.toml` is a local configuration file containing the Gemini API key. It is intentionally excluded from the public GitHub repository.
+
+---
 
 ## Installation and Setup
 
@@ -163,15 +196,13 @@ Enterprise360/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/amruthapottabathini-stack/Enterprise360.git
 cd Enterprise360
 ```
 
-Replace the placeholder with your actual repository URL.
-
 ### 2. Create a Virtual Environment
 
-**Windows PowerShell:**
+For Windows PowerShell:
 
 ```powershell
 python -m venv .venv
@@ -198,7 +229,9 @@ Add your Gemini API key:
 GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 ```
 
-Use your own API key. Never upload this file or expose your API key in a public repository.
+Replace the placeholder with your own API key.
+
+**Security:** Never upload your API key, passwords or private credentials to GitHub.
 
 ### 5. Run the Application
 
@@ -206,19 +239,24 @@ Use your own API key. Never upload this file or expose your API key in a public 
 streamlit run app.py
 ```
 
-Open the local URL displayed in the terminal.
+Open the local URL displayed in your terminal to access the dashboard.
+
+---
 
 ## Security Considerations
 
 - API credentials are stored using Streamlit secrets.
-- API keys must not be committed to GitHub.
+- API keys are excluded from the public GitHub repository through `.gitignore`.
 - The AI integration is designed around aggregate metrics.
 - Synthetic demonstration data is used in the portfolio version.
 - Real business data should only be used with appropriate authorization and safeguards.
 
+---
+
 ## Current Scope and Future Enhancements
 
-**Implemented:**
+### Implemented Features
+
 - Six interactive Streamlit dashboard modules.
 - SQLite database integration.
 - Transaction and vendor analytics.
@@ -228,8 +266,10 @@ Open the local URL displayed in the terminal.
 - Google Gemini API integration.
 - CSV exports for Power BI.
 - Power BI executive dashboard.
+- GitHub version control and project documentation.
 
-**Future Enhancements:**
+### Future Enhancements
+
 - Role-based access control.
 - Automated data refresh.
 - Advanced data validation and exception reporting.
@@ -238,14 +278,20 @@ Open the local URL displayed in the terminal.
 - Cloud deployment.
 - More advanced predictive risk analytics.
 
+---
+
 ## Author
 
 **Pottabathini Amrutha**
 
 Electronics and Communication Engineering Graduate
 
-Interested in Business Intelligence, Data Analytics, Risk Management, Compliance, and Enterprise Operations.
+Interested in Business Intelligence, Data Analytics, Risk Management, Compliance, Governance and Enterprise Operations.
+
+---
 
 ## Disclaimer
 
-Enterprise360 is an educational portfolio project developed for learning and demonstration purposes. It is not affiliated with or endorsed by any real organization. All sample data and displayed business figures are illustrative.
+Enterprise360 is an educational portfolio project developed for learning and demonstration purposes. It is not affiliated with or endorsed by any real organization.
+
+All sample data, business figures and analytical outputs are illustrative and should not be interpreted as actual company performance or professional business advice.
